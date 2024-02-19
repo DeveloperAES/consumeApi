@@ -1,0 +1,119 @@
+body{
+    background: #272b34;
+    height: 100vh;
+    margin-top: 55px;
+    width: 100vw;
+    margin:0 auto ; 
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.listaPersonajes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 60px 15px;
+    max-width: 1200px;
+}
+
+
+@media screen and (max-width: 1423px) {
+ 
+    body{
+        margin:0 auto ; 
+    }
+    .listaPersonajes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+    body{
+        margin:0 auto ; 
+    }
+
+    .listaPersonajes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+
+
+.personaje{
+    background: #3d3e43;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    border-radius: 10px;
+    justify-content: stretch;
+
+}
+
+.personaje-img img{
+    width:260px;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.personaje-info{
+    padding-block: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.info-name h2{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-name p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.info-ubicacion p {
+    color: rgb(187, 186, 185);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.info-ubicacion a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.info-aleas p{
+    color: rgb(187, 186, 185);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.info-aleas a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
